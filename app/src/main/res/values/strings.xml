@@ -8,4 +8,9 @@
 
     <!-- Label for overflow menu option that deletes all pet data in the app [CHAR LIMIT=20] -->
     <string name="action_delete_all_entries">Purge Data</string>
+
+    <string name="habit_none">None tracked today</string>
+    <string name="habit_sleep">Got to bed early</string>
+    <string name="habit_exercise">Performed daily exercise</string>
+    <string name="habit_eat_healthy">Ate healthy food</string>
 </resources>
