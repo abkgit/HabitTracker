@@ -40,7 +40,7 @@ public class HabitContract {
         /**
          * The date(in milliseconds) on which the habit was tracked.
          *
-         * Type: long
+         * Type: BIGINT
          */
         public final static String COLUMN_HABIT_DATE = "date";
 

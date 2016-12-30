@@ -1,16 +1,25 @@
 <resources>
     <string name="app_name">Habit Tracker</string>
 
-    <string name="habit_heading">Habit Maintained Today</string>
+    <string name="habit_heading">Select the habit to be tracked</string>
 
-    <!-- Label for editor menu option to save pet and leave editor [CHAR LIMIT=20] -->
+    <!-- Label for editor menu option to save habit [CHAR LIMIT=20] -->
     <string name="action_save">Save Habit</string>
 
-    <!-- Label for overflow menu option that deletes all pet data in the app [CHAR LIMIT=20] -->
+    <!-- Label for overflow menu option that deletes all habit data in the app [CHAR LIMIT=20] -->
     <string name="action_delete_all_entries">Purge Data</string>
 
+    <!-- Labels for the select habit to be tracked spinner [CHAR LIMIT=30] -->
     <string name="habit_none">None tracked today</string>
     <string name="habit_sleep">Got to bed early</string>
     <string name="habit_exercise">Performed daily exercise</string>
     <string name="habit_eat_healthy">Ate healthy food</string>
+
+    <!-- displayDatabaseInfo() strings -->
+    <string name="habits_table_contains">The habits table contains </string>
+    <string name="habit_entries"> habit entries.</string>
+
+    <!-- Toast Message Strings -->
+    <string name="saving_error">Error saving habit.</string>
+    <string name="habit_saved_with_rowid">Habit saved with row id: </string>
 </resources>
