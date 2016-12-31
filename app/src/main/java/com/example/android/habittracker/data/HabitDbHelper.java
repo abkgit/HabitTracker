@@ -13,7 +13,9 @@ import com.example.android.habittracker.data.HabitContract.HabitEntry;
 public class HabitDbHelper extends SQLiteOpenHelper {
     public static final String LOG_TAG = HabitDbHelper.class.getSimpleName();
 
-    /** Name of the database file */
+    /**
+     * Name of the database file
+     */
     private static final String DATABASE_NAME = "habit_tracker.db";
 
     /**
@@ -36,7 +38,7 @@ public class HabitDbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // Create a String that contains the SQL statement to create the habits table
-        String SQL_CREATE_HABITS_TABLE =  "CREATE TABLE " + HabitEntry.TABLE_NAME + " ("
+        String SQL_CREATE_HABITS_TABLE = "CREATE TABLE " + HabitEntry.TABLE_NAME + " ("
                 + HabitEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + HabitEntry.COLUMN_HABIT + " INTEGER NOT NULL, "
                 + HabitEntry.COLUMN_HABIT_DATE + " BIGINT NOT NULL);";
@@ -56,7 +58,7 @@ public class HabitDbHelper extends SQLiteOpenHelper {
     /**
      * @return Database name
      */
-    public String getDatabaseName(){
+    public String getDatabaseName() {
         return DATABASE_NAME;
     }
 }

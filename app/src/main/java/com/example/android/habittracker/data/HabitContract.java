@@ -9,7 +9,8 @@ public class HabitContract {
 
     // To prevent someone from accidentally instantiating the contract class,
     // give it an empty constructor.
-    private HabitContract() {}
+    private HabitContract() {
+    }
 
     /**
      * Inner class that defines constant values for the habits database table.
@@ -17,29 +18,31 @@ public class HabitContract {
      */
     public static final class HabitEntry implements BaseColumns {
 
-        /** Name of database table for habits */
+        /**
+         * Name of database table for habits
+         */
         public final static String TABLE_NAME = "habits";
 
         /**
          * Unique ID number for the habit (only for use in the database table).
-         *
+         * <p>
          * Type: INTEGER
          */
         public final static String _ID = BaseColumns._ID;
 
         /**
          * Name of the habit.
-         *
+         * <p>
          * The only possible values are {@link #HABIT_NONE}, {@link #HABIT_SLEEP},
          * {@link #HABIT_EXERCISE}, or {@link #HABIT_EAT_HEALTHY}.
-         *
+         * <p>
          * Type: INTEGER
          */
         public final static String COLUMN_HABIT = "habit";
 
         /**
          * The date(in milliseconds) on which the habit was tracked.
-         *
+         * <p>
          * Type: BIGINT
          */
         public final static String COLUMN_HABIT_DATE = "date";
